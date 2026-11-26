@@ -1,0 +1,21 @@
+{
+  "updatedAt": "2026-11-26T16:54:00+05:30",
+  "source": "Official portal links; demo status feed",
+  "statuses": {
+    "pm-kisan": { "status": "active", "deadline": null, "message": "Registration and e-KYC updates are available through the official PM-KISAN portal." },
+    "pmjay": { "status": "active", "deadline": null, "message": "Beneficiary eligibility checks remain available." },
+    "ujjwala": { "status": "active", "deadline": null, "message": "Applications are open subject to official LPG distributor availability." },
+    "jan-dhan": { "status": "active", "deadline": null, "message": "Account opening is available at participating banks." },
+    "pm-suryoday": { "status": "active", "deadline": null, "message": "Applications are open; availability and subsidy rules may change." },
+    "pm-aawas": { "status": "active", "deadline": null, "message": "Selection and verification may vary by state or local authority." },
+    "nps": { "status": "active", "deadline": null, "message": "Enrollment is open through participating banks and APY service providers." },
+    "pm-suraksha": { "status": "active", "deadline": null, "message": "Annual enrollment and premium auto-debit are available." },
+    "pm-jeevan": { "status": "active", "deadline": null, "message": "Annual enrollment and premium auto-debit are available." },
+    "sukanya": { "status": "active", "deadline": null, "message": "Enrollment is available for eligible girl children under 10." },
+    "post-matric": { "status": "deadline", "deadline": "2026-12-31T23:59:59+05:30", "message": "The displayed deadline is a prototype reminder. Verify the current academic-year deadline on National Scholarship Portal." },
+    "nsp": { "status": "deadline", "deadline": "2026-12-31T23:59:59+05:30", "message": "A national scholarship deadline may be approaching. Verify each scholarship before applying." },
+    "ladli-laxmi": { "status": "active", "deadline": null, "message": "Check the Madhya Pradesh Ladli Laxmi portal for current enrollment instructions." },
+    "sambal": { "status": "active", "deadline": null, "message": "Registration and assistance details are managed through the Madhya Pradesh state portal." },
+    "cyber-gram": { "status": "active", "deadline": null, "message": "Land and revenue services are available online subject to district operations." }
+  }
+}

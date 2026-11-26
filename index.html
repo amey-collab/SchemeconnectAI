@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#0b4d3b" />
+    <title>SchemeConnect AI | Government Schemes</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Sans+Devanagari:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to main content</a>
+    <div class="top-strip">
+      <div class="shell strip-inner">
+        <span>भारत सरकार <b>Government of India</b></span>
+        <div class="strip-actions">
+          <button type="button" class="strip-btn" id="textSize" aria-label="Increase text size">A<sup>+</sup></button>
+          <button type="button" class="strip-btn" id="languageToggle">हिन्दी</button>
+        </div>
+      </div>
+    </div>
+
+    <header class="site-header">
+      <div class="shell header-inner">
+        <a class="brand" href="#" aria-label="SchemeConnect AI home">
+          <div class="brand-mark" aria-hidden="true">
+            <svg viewBox="0 0 48 48"><path d="M24 4 8 11v11c0 10 6.8 18.3 16 22 9.2-3.7 16-12 16-22V11L24 4Z"/><path d="M24 13v20M14 23h20"/></svg>
+          </div>
+          <div>
+            <strong>SchemeConnect <em>AI</em></strong>
+            <span data-i18n="brandSub">सार्वजनिक कल्याण योजनाएँ</span>
+          </div>
+        </a>
+        <nav class="main-nav" aria-label="Main navigation">
+          <a class="active" href="#" data-i18n="home">Home</a>
+          <a href="#schemes" data-i18n="schemes">Schemes</a>
+          <a href="#how" data-i18n="how">How it works</a>
+          <button type="button" class="notification-btn" id="notificationBtn" aria-label="Scheme notifications">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18 8a6 6 0 0 0-12 0c0 7-3 7-3 9h18c0-2-3-2-3-9"/><path d="M10 21h4"/></svg>
+            <span id="notificationCount">0</span>
+          </button>
+          <button type="button" class="nav-help" id="helpBtn">?</button>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="hero">
+        <div class="hero-pattern"></div>
+        <div class="shell hero-inner">
+          <div class="hero-copy">
+            <div class="eyebrow"><span></span><b data-i18n="eyebrow">Citizen service portal</b></div>
+            <h1 data-i18n="heroTitle">Find government schemes<br />made for you</h1>
+            <p data-i18n="heroText">Answer a few simple questions to discover central and state schemes you may be eligible for.</p>
+            <button type="button" class="primary-btn" id="startCheck">
+              <span data-i18n="checkBtn">Check my eligibility</span>
+              <span class="btn-arrow">→</span>
+            </button>
+            <div class="privacy-note">
+              <svg viewBox="0 0 24 24"><path d="M12 3 5 6v5c0 4.6 3 8.5 7 10 4-1.5 7-5.4 7-10V6l-7-3Z"/><path d="m9 12 2 2 4-4"/></svg>
+              <span data-i18n="privacy">No Aadhaar required · Your answers stay private</span>
+            </div>
+          </div>
+          <div class="hero-card">
+            <div class="hero-card-head">
+              <span data-i18n="quickCheck">Quick eligibility check</span>
+              <div class="step-dots" aria-hidden="true"><i class="active"></i><i></i><i></i></div>
+            </div>
+            <div class="hero-question">
+              <span class="question-label" data-i18n="questionLabel">A few details help us find the right schemes</span>
+              <h2 data-i18n="questionTitle">What are you looking for?</h2>
+              <div class="goal-grid" id="heroGoals">
+                <button type="button" class="goal-card" data-value="income">
+                  <span class="goal-icon">₹</span><b data-i18n="goalIncome">Financial support</b>
+                </button>
+                <button type="button" class="goal-card" data-value="health">
+                  <span class="goal-icon">✚</span><b data-i18n="goalHealth">Health care</b>
+                </button>
+                <button type="button" class="goal-card" data-value="education">
+                  <span class="goal-icon">▣</span><b data-i18n="goalEducation">Education</b>
+                </button>
+                <button type="button" class="goal-card" data-value="housing">
+                  <span class="goal-icon">⌂</span><b data-i18n="goalHousing">Housing</b>
+                </button>
+              </div>
+              <button type="button" class="card-next" id="heroNext" disabled>
+                <span data-i18n="continue">Continue</span> <b>→</b>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="trust-bar" aria-label="Portal statistics">
+        <div class="shell trust-grid">
+          <div><strong>15+</strong><span data-i18n="statSchemes">Schemes available</span></div>
+          <div><strong>28</strong><span data-i18n="statStates">States & Union Territories</span></div>
+          <div><strong>100%</strong><span data-i18n="statOffline">Privacy-first screening</span></div>
+          <div><strong>EN / हिं</strong><span data-i18n="statLang">Bilingual support</span></div>
+        </div>
+      </section>
+
+      <section class="schemes-section" id="schemes">
+        <div class="shell">
+          <div class="section-heading">
+            <div>
+              <div class="eyebrow dark"><span></span><b data-i18n="popularEyebrow">Popular categories</b></div>
+              <h2 data-i18n="browseTitle">Browse schemes</h2>
+            </div>
+            <button type="button" class="text-link" id="viewAll" data-i18n="viewAll">View all schemes →</button>
+          </div>
+
+          <div class="category-row" id="categoryRow">
+            <button type="button" class="category active" data-category="all"><span>⌘</span><b data-i18n="catAll">All schemes</b></button>
+            <button type="button" class="category" data-category="agriculture"><span>♧</span><b data-i18n="catAgriculture">Agriculture</b></button>
+            <button type="button" class="category" data-category="health"><span>✚</span><b data-i18n="catHealth">Health</b></button>
+            <button type="button" class="category" data-category="education"><span>▣</span><b data-i18n="catEducation">Education</b></button>
+            <button type="button" class="category" data-category="women"><span>♀</span><b data-i18n="catWomen">Women & Child</b></button>
+            <button type="button" class="category" data-category="housing"><span>⌂</span><b data-i18n="catHousing">Housing</b></button>
+            <button type="button" class="category" data-category="pension"><span>◎</span><b data-i18n="catPension">Pension</b></button>
+          </div>
+
+          <div class="search-panel">
+            <div class="search-box">
+              <svg viewBox="0 0 24 24"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m15.5 15.5 5 5"/></svg>
+              <input id="schemeSearch" type="search" placeholder="Search schemes, benefits or departments" data-i18n-placeholder="searchPlaceholder" />
+            </div>
+            <select id="levelFilter" aria-label="Scheme level">
+              <option value="all" data-i18n="levelAll">All levels</option>
+              <option value="central" data-i18n="levelCentral">Central Government</option>
+              <option value="state" data-i18n="levelState">State Government</option>
+            </select>
+          </div>
+
+          <div class="scheme-grid" id="schemeGrid"></div>
+        </div>
+      </section>
+
+      <section class="how-section" id="how">
+        <div class="shell">
+          <div class="section-heading centered">
+            <div class="eyebrow dark"><span></span><b data-i18n="howEyebrow">Simple and transparent</b></div>
+            <h2 data-i18n="howTitle">How SchemeConnect works</h2>
+          </div>
+          <div class="how-grid">
+            <article><div class="how-number">01</div><h3 data-i18n="step1Title">Answer a few questions</h3><p data-i18n="step1Text">Tell us only what may affect your eligibility. You can choose “I don't know”.</p></article>
+            <article><div class="how-number">02</div><h3 data-i18n="step2Title">We check the rules</h3><p data-i18n="step2Text">Our transparent eligibility engine compares your answers with official guidelines.</p></article>
+            <article><div class="how-number">03</div><h3 data-i18n="step3Title">View and apply</h3><p data-i18n="step3Text">Get a ranked list, documents checklist and official application link.</p></article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="shell footer-inner">
+        <div class="footer-brand">
+          <div class="brand-mark small" aria-hidden="true"><svg viewBox="0 0 48 48"><path d="M24 4 8 11v11c0 10 6.8 18.3 16 22 9.2-3.7 16-12 16-22V11L24 4Z"/><path d="M24 13v20M14 23h20"/></svg></div>
+          <div><strong>SchemeConnect AI</strong><span data-i18n="footerSub">Empowering citizens with clear access</span></div>
+        </div>
+        <p data-i18n="footerText">Information is provided for guidance. Please verify details with the official scheme portal.</p>
+      </div>
+    </footer>
+
+    <div class="modal-backdrop" id="modalBackdrop" hidden>
+      <section class="check-modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+        <button type="button" class="modal-close" id="modalClose" aria-label="Close">×</button>
+        <div class="modal-progress"><span id="progressBar"></span></div>
+        <div id="wizardContent"></div>
+      </section>
+    </div>
+
+    <dialog id="schemeDialog" class="scheme-dialog">
+      <div id="schemeDialogContent"></div>
+    </dialog>
+
+    <aside class="notification-panel" id="notificationPanel" aria-label="Scheme alerts" hidden>
+      <div class="notification-head">
+        <div><strong data-i18n="alertsTitle">Scheme alerts</strong><span id="lastStatusUpdate">Connecting...</span></div>
+        <button type="button" id="closeNotifications" aria-label="Close">×</button>
+      </div>
+      <div id="notificationList"></div>
+    </aside>
+
+    <div class="toast-stack" id="toastStack" aria-live="polite"></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,10 @@
+{
+  "name": "schemeconnect-ai",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "start": "npx --yes serve .",
+    "dev": "npx --yes serve .",
+    "build": "node scripts/build.js"
+  }
+}
